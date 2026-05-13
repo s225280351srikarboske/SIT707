@@ -9,10 +9,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: task9.1P
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,4 +20,6 @@ jobs:
           java-version: 17
 
       - name: Run Maven Tests
-        run: mvn clean test
+        run: |
+          cd task9.1P
+          mvn clean test
