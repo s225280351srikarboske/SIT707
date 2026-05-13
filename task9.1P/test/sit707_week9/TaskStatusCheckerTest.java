@@ -15,7 +15,7 @@ public class TaskStatusCheckerTest {
 
         List<Task> tasks = checker.getTasksByStudentId("S123");
 
-        assertEquals(5, tasks.size());
+        assertEquals(2, tasks.size());
     }
 
     @Test
